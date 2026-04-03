@@ -2,14 +2,14 @@ package core.basesyntax.impl;
 
 import core.basesyntax.Storage;
 import java.util.Objects;
-
 public class StorageImpl<K, V> implements Storage<K, V> {
     private static final int MAX_SIZE = 10;
     private final Object[] keys = new Object[MAX_SIZE];
     private final Object[] values = new Object[MAX_SIZE];
-    private int size = 0;
+    private int size ;
 
     public StorageImpl() {
+        this.size = 0;
     }
 
     @Override
